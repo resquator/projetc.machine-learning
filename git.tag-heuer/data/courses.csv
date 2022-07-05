@@ -1,0 +1,19 @@
+id,hole,course,courseid,par,distance,handicap
+001,01,Golf de Gonville,1,5,480,1
+002,02,Golf de Gonville,1,4,344,2
+003,03,Golf de Gonville,1,3,122,18
+004,04,Golf de Gonville,1,4,290,15
+005,05,Golf de Gonville,1,4,290,5
+006,06,Golf de Gonville,1,3,165,8
+007,07,Golf de Gonville,1,3,177,6
+008,08,Golf de Gonville,1,3,145,11
+009,09,Golf de Gonville,1,4,324,4
+010,10,Golf de Gonville,1,3,156,12
+011,11,Golf de Gonville,1,4,299,16
+012,12,Golf de Gonville,1,3,197,3
+013,13,Golf de Gonville,1,4,290,17
+014,14,Golf de Gonville,1,5,389,10
+015,15,Golf de Gonville,1,4,229,14
+016,16,Golf de Gonville,1,3,165,9
+017,17,Golf de Gonville,1,5,420,13
+018,18,Golf de Gonville,1,3,135,7
