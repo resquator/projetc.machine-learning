@@ -1,0 +1,25 @@
+{
+
+    "15": {
+        "idProvider": "15",
+        "WebName": "William Hill",
+        "WebUrl": "william-hill",
+        "IsBookmaker": "y",
+        "IsBettingExchange": "n",
+        "Url": "http://ads2.williamhill.com/redirect.aspx?pid=39394982&lpid=1487414232&bid=1470162595",
+        "DefaultBetslipUrl": null,
+        "Active": "y",
+        "NewTo": "0",
+        "SetNew": "0",
+        "PreferredCountryID": "0",
+        "sr": 1,
+        "IsPremium": "y",
+        "sortKey": 377,
+        "isNew": false,
+        "bonus": {
+            "id": "221",
+            "title": "Bet \u00a310 Get \u00a330 in free bets",
+            "text": "New William Hill online customers only. Min. unit stake of \u00a310/\u20ac10 at odds of 1.5 or greater. Only the \u201cwin\u201d part from EW bets will count. Free bet terms, payment method & country restrictions apply. Free bets credited as 3 x \u00a310/\u20ac10. Free bet stakes are not returned as part of the settlement of successful free bets. All Free Bets must be wagered within 30 days."
+        }
+    }
+}

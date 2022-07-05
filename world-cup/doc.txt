@@ -1,0 +1,15 @@
+- import Notebook
+<<<<<<< HEAD
+pull from git hub version
+=======
+
+pull version with loop 04/05
+<<<<<<< HEAD
+pull FIFA ranking
+=======
+>>>>>>> 7b6068f84cd6e01d5b94f0e351f4c37e61a64170
+>>>>>>> d82766bac19c799e21028a1d11f0bdf8dccd8b72
+
+import
+
+may 16th
