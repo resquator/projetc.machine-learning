@@ -1,0 +1,290 @@
+2021-06-02 20:15:09,688 | INFO: Start the full run at 06022021-2015
+2021-06-02 20:15:09,701 | INFO: Call the 1st Notebook: 01-anonymization.ipynb
+2021-06-02 20:15:09,724 | INFO: Call the 2nd Notebook: 02-data-sources.ipynb
+2021-06-02 20:15:09,728 | INFO: 02 - FINAL FILES READY TO BE MERGED IN THE TIMESERIES
+2021-06-02 20:15:09,732 | INFO: Call the 3rd Notebook: 03-create_timeseries.ipynb
+2021-06-02 20:15:09,902 | INFO: I start to run your Notebook ! -- Good Luck :-) 
+2021-06-02 20:15:09,964 | INFO: Number of flows 14820 read from the source file with 9 columns. After combining duplicates.
+2021-06-02 20:15:10,025 | INFO: Number of returns 14762 read from the source file with 24 columns.
+2021-06-02 20:15:10,034 | INFO: Merge Flows and performances on SRC_UID + EOM. Method = inner to keep only joined rows.
+2021-06-02 20:15:10,043 | INFO: Number of merged rows 14641 read from the source file with 31 columns.
+2021-06-02 20:15:10,074 | INFO: Number of documents rows 10635 read from the source file with 3 columns.
+2021-06-02 20:15:10,079 | INFO: Merge time series (ts) with documents. Method applied is left-join to keep the full ts.
+2021-06-02 20:15:10,131 | INFO: Number of PSU rows 9155 read from the source file with 6 columns.
+2021-06-02 20:15:10,136 | INFO: Merge the PSU table with Time Series (ts). Method = left to keep all ts rows.
+2021-06-02 20:15:10,142 | INFO: Number of managers rows 88 read from the source file with 2 columns.
+2021-06-02 20:15:10,147 | INFO: Merge the managers table with the time series. Keep all time series rows and join manager experience
+2021-06-02 20:15:10,183 | INFO: Number of feews rows 97 read from the source file with 11 columns.
+2021-06-02 20:15:10,193 | INFO: Merge te fees table with the time series. Funds has a unique fees. Those without fees will be aligned with an average of the strategy in EDA
+2021-06-02 20:15:10,232 | INFO: Merge the events indicators table with the time series.
+2021-06-02 20:15:10,252 | INFO: SRC_UID                                 int64
+EOM                            datetime64[ns]
+QUANTITY                                int64
+IN (USD)                                int64
+OUT (USD)                               int64
+NET (USD)                               int64
+AUM (USD)                               int64
+ASSET_NAME                             object
+PRODUCT_STRATEGY                       object
+BENCH_PERF_1_MONTH                    float64
+BENCH_PERF_1_YEAR                     float64
+BENCH_PERF_3_MONTH                    float64
+BENCH_PERF_6_MONTH                    float64
+BENCH_VOL_1_MONTH                     float64
+BENCH_VOL_3_MONTH                     float64
+BENCH_VOL_6_MONTH                     float64
+BENCH_VOLATILITY_1_YEAR               float64
+NAV_PERF_1_MONTH                      float64
+NAV_PERF_1_YEAR                       float64
+NAV_PERF_3_MONTH                      float64
+NAV_PERF_6_MONTH                      float64
+NAV_VOL_1_MONTH                       float64
+NAV_VOL_3_MONTH                       float64
+NAV_VOL_6_MONTH                       float64
+NAV_VOLATILITY_1_YEAR                 float64
+BENCH_VOL_SINCE_INCEPT                float64
+NAV_PERF_COMPOUND_CREATION            float64
+NAV_VOL_SINCE_INCEPT                  float64
+FUND_SIZE                             float64
+SUB_FUNDS_SHARE_PARTS                 float64
+SUB_FUNDS_SHARE_SIZE_SF_CCY           float64
+DOWNLOADED_DOCUMENTS                  float64
+WEIGHTED                              float64
+COUNTRY                                object
+PSU                                    object
+PSU_SCORE                             float64
+EXPERIENCE                            float64
+FUND_NAME                              object
+ADMINSTRATION_FEES                    float64
+MANAGEMENT_FEES                       float64
+MULTI_MANAGER_STRUCTURE                 int64
+SOFTCLOSING                           float64
+RISK_LEVEL                             object
+DATE_SHARE                             object
+CNT_SHARE                               int64
+STRATEGY_CAPABILITY                    object
+IS_STRATEGIC                           object
+POSITIVE_RFP                           object
+EVENT_IMPACT                          float64
+dtype: object
+2021-06-02 20:15:10,266 | INFO: COUNT NULL VALUES IN (ts)
+2021-06-02 20:15:10,272 | INFO: SRC_UID                           0
+EOM                               0
+QUANTITY                          0
+IN (USD)                          0
+OUT (USD)                         0
+NET (USD)                         0
+AUM (USD)                         0
+ASSET_NAME                        0
+PRODUCT_STRATEGY                  0
+BENCH_PERF_1_MONTH              421
+BENCH_PERF_1_YEAR               691
+BENCH_PERF_3_MONTH              469
+BENCH_PERF_6_MONTH              541
+BENCH_VOL_1_MONTH              2854
+BENCH_VOL_3_MONTH               531
+BENCH_VOL_6_MONTH               531
+BENCH_VOLATILITY_1_YEAR         721
+NAV_PERF_1_MONTH                 20
+NAV_PERF_1_YEAR                 296
+NAV_PERF_3_MONTH                 68
+NAV_PERF_6_MONTH                142
+NAV_VOL_1_MONTH                2535
+NAV_VOL_3_MONTH                 132
+NAV_VOL_6_MONTH                 134
+NAV_VOLATILITY_1_YEAR           331
+BENCH_VOL_SINCE_INCEPT          509
+NAV_PERF_COMPOUND_CREATION      283
+NAV_VOL_SINCE_INCEPT             20
+FUND_SIZE                         0
+SUB_FUNDS_SHARE_PARTS             0
+SUB_FUNDS_SHARE_SIZE_SF_CCY     848
+DOWNLOADED_DOCUMENTS           3059
+WEIGHTED                       4363
+COUNTRY                        4363
+PSU                            4363
+PSU_SCORE                      4447
+EXPERIENCE                     1606
+FUND_NAME                         0
+ADMINSTRATION_FEES                0
+MANAGEMENT_FEES                   0
+MULTI_MANAGER_STRUCTURE           0
+SOFTCLOSING                      40
+RISK_LEVEL                        0
+DATE_SHARE                        0
+CNT_SHARE                         0
+STRATEGY_CAPABILITY               0
+IS_STRATEGIC                      0
+POSITIVE_RFP                   7765
+EVENT_IMPACT                   3895
+dtype: int64
+2021-06-02 20:15:10,274 | WARNING: No columns to delete in (ts)
+2021-06-02 20:15:10,969 | INFO: 03-create_timeseries ended with success !
+2021-06-02 20:15:10,999 | INFO: Call the 4th Notebook: 04-EDA-TimeSeries.ipynb
+2021-06-02 20:15:12,022 | INFO: I start to run your Notebook ! -- Good Luck :-) It is:  06/02/2021, 20:15:12
+2021-06-02 20:15:12,080 | INFO: TIME SERIES shape9891
+2021-06-02 20:15:12,083 | INFO: Mising value to deal with
+2021-06-02 20:15:12,087 | INFO: SRC_UID                           0
+PRODUCT_STRATEGY                  0
+ASSET_NAME                        0
+FUND_NAME                         0
+STRATEGY_CAPABILITY               0
+IS_STRATEGIC                      0
+EOM                               0
+ADMINSTRATION_FEES                0
+MANAGEMENT_FEES                   0
+MULTI_MANAGER_STRUCTURE           0
+EXPERIENCE                     1606
+SOFTCLOSING                      40
+RISK_LEVEL                        0
+DATE_SHARE                        0
+CNT_SHARE                         0
+QUANTITY                          0
+IN_FLOWS                          0
+OUT_FLOWS                         0
+NET_FLOWS                         0
+AUM                               0
+BENCH_PERF_1_MONTH              421
+BENCH_PERF_1_YEAR               691
+BENCH_PERF_3_MONTH              469
+BENCH_PERF_6_MONTH              541
+BENCH_VOL_1_MONTH              2854
+BENCH_VOL_3_MONTH               531
+BENCH_VOL_6_MONTH               531
+BENCH_VOLATILITY_1_YEAR         721
+NAV_PERF_1_MONTH                 20
+NAV_PERF_1_YEAR                 296
+NAV_PERF_3_MONTH                 68
+NAV_PERF_6_MONTH                142
+NAV_VOL_1_MONTH                2535
+NAV_VOL_3_MONTH                 132
+NAV_VOL_6_MONTH                 134
+NAV_VOLATILITY_1_YEAR           331
+BENCH_VOL_SINCE_INCEPT          509
+NAV_PERF_COMPOUND_CREATION      283
+NAV_VOL_SINCE_INCEPT             20
+FUND_SIZE                         0
+SUB_FUNDS_SHARE_PARTS             0
+SUB_FUNDS_SHARE_SIZE_SF_CCY     848
+DOWNLOADED_DOCUMENTS           3059
+WEIGHTED                       4363
+COUNTRY                        4363
+PSU                            4363
+PSU_SCORE                      4447
+POSITIVE_RFP                   7765
+EVENT_IMPACT                   3895
+dtype: int64
+2021-06-02 20:15:12,167 | INFO: NumExpr defaulting to 8 threads.
+2021-06-02 20:15:12,356 | INFO: Columns with BENCHMARK
+2021-06-02 20:15:12,368 | INFO: ['BENCH_PERF_1_MONTH', 'BENCH_PERF_1_YEAR', 'BENCH_PERF_3_MONTH', 'BENCH_PERF_6_MONTH', 'BENCH_VOL_1_MONTH', 'BENCH_VOL_3_MONTH', 'BENCH_VOL_6_MONTH', 'BENCH_VOLATILITY_1_YEAR', 'BENCH_VOL_SINCE_INCEPT']
+2021-06-02 20:15:14,165 | INFO: ts dataset save in csv file with 9891 rows and 47 columns
+2021-06-02 20:15:15,173 | INFO:         FUND_NAME
+TARGET           
+-1.0         3309
+ 0.0         3265
+ 1.0         3317
+2021-06-02 20:15:15,174 | INFO: ts dataset save in csv file with 9891 rows and 52 columns
+2021-06-02 20:15:15,916 | INFO: I start to run your Notebook ! -- Good Luck :-) It is:  06/02/2021, 20:15:15
+2021-06-02 20:15:15,979 | INFO: Cleaned time series loaded with 9891 rows and 54 columns
+2021-06-02 20:15:16,662 | INFO: ['Absolute Return' 'Active Quant' 'Alternatives'
+ 'Core & Specialist Equities' 'Core Bonds' 'Credit' 'Emerging Markets'
+ 'Indexed Equities' 'Money Market' 'Multi Asset' 'Other' 'Thematic']
+2021-06-02 20:15:17,380 | INFO: plot the pivot table in a subplot graph to see the trends
+2021-06-02 20:15:18,146 | INFO: *** Though the documentation for decomposition itself says that it’s a very naive representation but it is still popular ***
+2021-06-02 20:15:18,531 | INFO: Create the calendar for heatmap plot
+2021-06-02 20:15:18,556 | INFO: Year       2010       2011       2012       2013       2014       2015  \
+Jan    0.947037   3.962310   8.109537  15.199302  -6.183845   2.925402   
+Feb    9.456459  -8.505455   0.550437   5.606375  -3.221047  12.617011   
+Mar   14.668264  -6.184232   0.615377   0.519487   2.420376   9.083013   
+Apr   27.834726   8.236707   4.222936   2.962449   6.391926   0.938636   
+May   -2.412539   4.042974   5.982275   1.808017   6.511772   4.178959   
+Jun    2.289441  -5.327903  11.885972 -16.650734   5.009516  -1.373186   
+Jul    9.056189   1.569805   1.372377   4.155235  -3.719333   5.471280   
+Aug    4.371147   3.965028   7.710881  -4.915599  -1.021417  -2.994898   
+Sep    0.125364  -3.961922  -0.240155   3.847802   1.484042  -2.036045   
+Oct   -4.208154  -5.371645  -2.616678   5.351820  -6.689427   5.472902   
+Nov   -1.551441  15.873691   1.343430  -5.203823  -1.399860 -10.560714   
+Dec    7.966778  -3.031862  14.028235   2.945732  15.827462  12.894904   
+All    5.711939   0.438958   4.413719   1.302172   1.284180   3.051439   
+
+Year       2016       2017       2018       2019       2020       All  
+Jan   -1.447879   7.457481   5.717144   2.779611  16.452086  6.399668  
+Feb    3.788223  15.355749  -6.909036  -2.695134   1.200332  2.476719  
+Mar    9.137952   9.876629   4.776940  -2.656573 -10.208656  2.913507  
+Apr   10.757526   9.128646  -4.443544  -5.441198  18.169535  7.159850  
+May    6.227438  12.664520 -15.830858  -1.194039   7.121400  2.645447  
+Jun   16.368771  15.155398  -0.105395   2.853502   1.053244  2.832602  
+Jul   22.996243  -0.728163   8.777232   0.747320  11.281742  5.543630  
+Aug    7.975662   3.163541   1.970086   0.693232   1.870843  2.071682  
+Sep    5.532938   3.207883  -0.627388   1.580645   7.783054  1.517838  
+Oct    8.501823   3.994289  -2.798257   8.404084   9.645229  1.789635  
+Nov   -5.588164   3.754943 -13.113184   4.397050  12.594731  0.049696  
+Dec    6.790096  -1.209070  -4.775484  11.136552  19.340043  7.446671  
+All    7.586719   6.818487  -2.280145   1.717088   8.025299  3.591850  
+2021-06-02 20:15:18,571 | INFO: Ploting the heatmap with the calendar
+2021-06-02 20:15:19,025 | INFO: Create the calendar for heatmap plot
+2021-06-02 20:15:19,063 | INFO: Year       2010       2011       2012       2013       2014       2015  \
+Jan    3.078491  20.376362 -10.442407   3.135906  14.488047  12.162594   
+Feb    4.082210   8.526082  -4.473971  14.367394  31.575262  22.613105   
+Mar   13.827606   2.616358 -11.619289  20.258270  12.744124  19.837268   
+Apr   11.879536  14.988478  -5.306710  15.873406 -26.769025   5.980078   
+May  -20.535888   0.791704  -0.986846  23.465131   3.041753  10.079825   
+Jun    0.322110   3.292408  -5.565362   7.068230  -9.766610  13.818035   
+Jul    1.052842  -3.175542  -3.057879  21.932476   4.205822  21.054379   
+Aug   -4.391341 -29.625366  -2.218501  13.854064 -12.237653 -14.310300   
+Sep    5.399807 -10.436409  11.801153  14.470368  13.707960  -4.416742   
+Oct   15.191461  -4.913190   8.838043  36.941909  -1.481018  12.891022   
+Nov    9.243789  -6.004777   0.538861  13.455652   5.310004  17.978136   
+Dec   24.390464  -5.407013  12.146541  22.636839   1.403548  21.895770   
+All    5.456891  -0.747575  -0.862197  17.288304   3.018518  11.753490   
+
+Year       2016       2017       2018       2019        2020        All  
+Jan  -13.543965  37.551909  70.947047 -13.685944   71.579141  31.217022  
+Feb   -8.820418  46.584722  42.718081 -16.648691   58.596350  18.545979  
+Mar   18.226911  56.354033  45.442796 -34.092789  -33.961645   9.925317  
+Apr    7.136328  41.376993  16.758832  -7.521025   84.508098  15.002667  
+May    5.520867  68.186480  -4.564300 -27.578893   63.696770  11.611736  
+Jun   -3.349471  69.939295  34.880144  22.522611   60.258772  18.418906  
+Jul    4.525810  26.025214  36.987640  -4.143419   30.141015  12.640174  
+Aug   13.702294  13.191028  25.119972  11.298773   36.377179   5.244135  
+Sep   20.546206  22.852238  21.810107  30.547645   45.184338  16.047741  
+Oct   17.987448  52.302139   6.402631  39.606812   73.047248  23.797184  
+Nov   31.376999  53.671285  -2.972445  47.449231  138.245868  28.878698  
+Dec   17.102856  40.015486 -36.883904  36.333795  123.221005  23.796737  
+All    9.200989  44.004235  21.387217   7.007342   62.574512  18.056614  
+2021-06-02 20:15:19,067 | INFO: Ploting the heatmap with the calendar for thematics
+2021-06-02 20:15:19,518 | INFO: *** Though the documentation for decomposition itself says that it’s a very naive representation but it is still popular ***
+2021-06-02 20:15:20,078 | INFO: Autocorrelation ploted
+2021-06-02 20:15:20,110 | INFO: Call the 5th Notebook: Transformation of the TimeSeries to a Supervised Learning problem
+2021-06-02 20:15:20,635 | INFO: 
+2021-06-02 20:15:20,635 | INFO: ***************************************************************************************************
+2021-06-02 20:15:20,635 | INFO: ***                                                                                             ***
+2021-06-02 20:15:20,635 | INFO: ***   NEW RUN                                                                                   ***
+2021-06-02 20:15:20,635 | INFO: ***                                                                                             ***
+2021-06-02 20:15:20,636 | INFO: ***************************************************************************************************
+2021-06-02 20:15:20,636 | INFO: I start to run your Notebook ! -- Good Luck :-) It is:  06/02/2021, 20:15:20
+2021-06-02 20:15:21,585 | INFO: ['NET_FLOWS']
+2021-06-02 20:15:21,585 | INFO: ['NET_FLOWS', 'SRC_UID']
+2021-06-02 20:15:21,585 | INFO: SRC_UID
+2021-06-02 20:15:21,654 | INFO: Baseline for model is 0.47 with a Logistic Regression on a simulation of univariate transformation
+2021-06-02 20:15:21,688 | INFO: Transformation called with interpolation=True, verbose=False, breakdown-level=SRC_UID and dictionary 
+[{'cols': ['IN_FLOWS'], 'method': 'shift', 'period': [1, 2, 3], 'original': True}, {'cols': ['AUM'], 'method': 'rolling', 'period': [2, 5, 7], 'original': True}]
+2021-06-02 20:15:21,688 | INFO: -------------------------------------------------------------------------------------------
+2021-06-02 20:15:21,688 | INFO: Initializing with Columns in X 60
+2021-06-02 20:15:21,689 | INFO: index 0 - dico value for key cols is ['IN_FLOWS']
+2021-06-02 20:15:21,689 | INFO: index 1 - dico value for key method is shift
+2021-06-02 20:15:21,689 | INFO: index 2 - dico value for key period is [1, 2, 3]
+2021-06-02 20:15:21,689 | INFO: index 3 - dico value for key original is True
+2021-06-02 20:15:21,689 | INFO: (n) periods [1, 2, 3] for the skew method is [0.75, 0.5, 0.25, 0.0]
+2021-06-02 20:15:21,892 | INFO: Columns in X_temp 63
+2021-06-02 20:15:21,893 | INFO: New columns added to the dataframe: Index(['IN_FLOWS-s1', 'IN_FLOWS-s2', 'IN_FLOWS-s3'], dtype='object')
+2021-06-02 20:15:21,893 | INFO: index 0 - dico value for key cols is ['AUM']
+2021-06-02 20:15:21,893 | INFO: index 1 - dico value for key method is rolling
+2021-06-02 20:15:21,893 | INFO: index 2 - dico value for key period is [2, 5, 7]
+2021-06-02 20:15:21,893 | INFO: index 3 - dico value for key original is True
+2021-06-02 20:15:21,893 | INFO: (n) periods [2, 5, 7] for the skew method is [0.75, 0.5, 0.25, 0.0]
+2021-06-02 20:15:22,098 | INFO: Columns in X_temp 66
+2021-06-02 20:15:22,113 | INFO: New columns added to the dataframe: Index(['AUM-r2', 'AUM-r5', 'AUM-r7'], dtype='object')
+2021-06-02 20:15:22,123 | INFO: Number of NULL value after transformation is 0
+2021-06-02 20:15:22,124 | INFO: List of features selected for modeling 
+['IN_FLOWS-s1', 'IN_FLOWS-s2', 'IN_FLOWS-s3', 'AUM-r2', 'AUM-r5', 'AUM-r7', 'TARGET', 'FLOWS_YEAR', 'FLOWS_MONTH', 'SRC_UID'] with 9891 rows
